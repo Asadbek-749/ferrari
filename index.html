@@ -82,42 +82,113 @@
           </div>
         </div>
       </nav>
+
+      <main class="container mx-auto mt-[117px] relative text-white">
+        <div class="flex-1 space-y-6 text-center lg:text-left">
+          <h1
+            class="font-extrabold text-[36px] md:text-[52px] leading-[100%] tracking-[0%] uppercase font-montserrat pb-5"
+          >
+            Превосходство в обслуживании
+          </h1>
+          <p
+            class="font-semibold text-[36px] leading-[100%] tracking-[0%] font-montserrat mb-[50px]"
+          >
+            Ваша машина в надежных руках!
+          </p>
+
+          <a
+            href="#form"
+            class="inline-block mb-[95px] bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-[18px] font-semibold py-5 px-[67px] rounded-[10px]"
+          >
+            Оставить заявку
+          </a>
+
+          <ul class="flex flex-col gap-5 space-y-2 text-sm">
+            <li
+              class="border border-[#FFB72B] rounded-[10px] flex items-center gap-2.5 w-1/6"
+            >
+              <img
+                class="-ml-5"
+                src="./images/svg/italia.svg"
+                alt="italia"
+              />Специально обученные механики
+            </li>
+            <li
+              class="border border-[#FFB72B] rounded-[10px] flex items-center gap-2.5 w-1/6"
+            >
+              <img
+                class="-ml-5"
+                src="./images/svg/crown-icon.svg"
+                alt="crown-icon"
+              />Только премиум качество
+            </li>
+          </ul>
+
+          <h2
+            class="absolute top-32 right-95 z-10 font-extrabold text-[100px] leading-[96%] tracking-[-4.5%] uppercase font-montserrat"
+          >
+            F812 SUPER
+          </h2>
+          <img
+            class="absolute -bottom-40 -right-25 z-20"
+            src="./images/img/header-car.png"
+            alt="Ferrari"
+          />
+          <img
+            class="absolute top-30 -right-50 z-5"
+            src="./images/img/header-bg.png"
+            alt="ferrari logo"
+          />
+        </div>
+      </main>
     </header>
 
-    <main class="container mx-auto mt-[117px] relative text-white">
-      <div class="flex-1 space-y-6 text-center lg:text-left">
-        <h1
-          class="font-extrabold text-[36px] md:text-[52px] leading-[100%] tracking-[0%] uppercase font-montserrat pb-5"
+    <!-- Consultatsion Section  -->
+    <section class="container mx-auto mt-[100px] mb-[100px]">
+      <!-- Section info  -->
+      <div
+        class="bg-[url('/images/img/consultatsiya-bg.png')] bg-right bg-no-repeat border border-[#FF0000] shadow-[0px_0px_20px_1px_#00000012] rounded-md p-10"
+      >
+        <h2
+          class="w-[50%] font-medium text-[32px] leading-[140%] tracking-[0%] text-[#FFB72B] pb-10"
         >
-          Превосходство в обслуживании
-        </h1>
+          Чтобы узнать точную стоимость работ,
+          <span class="text-white">запишитесь на бесплатную консультацию</span>
+        </h2>
+
+        <!-- Section Center  -->
+        <div class="mb-5 flex w-[80%] justify-between gap-5">
+          <input
+            class="flex-2 p-5 outline-none border border-[#3333334D] rounded-[10px] bg-white placeholder:text-gray-400  placeholder:text-sm"
+            type="text"
+            placeholder="Ваше имя"
+          />
+
+          <!-- Input Form            -->
+          <div
+            class="flex flex-2 items-center gap-2.5 p-5 border border-[#3333334D] rounded-[10px] bg-white"
+          >
+            <img src="./images/svg/russia.svg" alt="russia" />
+            <input
+              class="outline-none placeholder:text-gray-400  placeholder:text-sm"
+              type="text"
+              placeholder="+7 (999) 999-99-99"
+            />
+          </div>
+
+          <button
+            class="flex-1 inline-block bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-[18px] font-semibold py-5 px-[67px] rounded-[10px]"
+          >
+            ЗАПИСАТЬСЯ
+          </button>
+        </div>
+
         <p
-          class="font-semibold text-[36px] leading-[100%] tracking-[0%] font-montserrat mb-[50px]"
+          class="font-medium text-[16px] leading-[140%] tracking-[0%] text-white"
         >
-          Ваша машина в надежных руках!
+          Оставляя заявку, вы даете согласие на обработку персональных данных
         </p>
-
-        <a
-          href="#form"
-          class="inline-block mb-[95px] bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-[18px] font-semibold py-5 px-[67px] rounded-[10px]"
-        >
-          Оставить заявку
-        </a>
-
-        <ul class=" flex flex-col gap-5 space-y-2 text-sm">
-          <li class=" border border-[#FFB72B] rounded-[10px]  flex items-center gap-2.5 w-1/6">
-            <img class="-ml-5" src="./images/svg/italia.svg" alt="italia" />Специально
-            обученные механики
-          </li>
-          <li class=" border border-[#FFB72B] rounded-[10px]  flex items-center gap-2.5 w-1/6">
-            <img class="-ml-5" src="./images/svg/crown-icon.svg" alt="crown-icon" />Только
-            премиум качество
-          </li>
-        </ul>
-
-        <h2 class="absolute top-40 right-95 font-extrabold text-[100px] leading-[96%] tracking-[-4.5%] uppercase font-montserrat ">F812 SUPER</h2>
-        <img class="absolute -bottom-40 -right-25 " src="./images/img/header-car.png" alt="Ferrari">
       </div>
-    </main>
+    </section>
   </body>
 </html>
