@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -12,183 +12,391 @@
     <title>avto</title>
   </head>
   <body class="bg-[#1A1A1A] font-montserrat">
-    <header class="py-10 bg-linear-to-b from-[#333333] to-[#1A1A1A]">
-      <nav class="container mx-auto flex items-center">
-        <div class="">
-          <a href="./index.html">
-            <img
-              class="transition-transform duration-300 hover:scale-110"
-              src="./images/svg/ferrari_logo.svg"
-              alt="Sayt logo"
-            />
-          </a>
-        </div>
+    <!-- Header -->
+    <header class="py-6 bg-linear-to-b from-[#333333] to-[#1A1A1A]">
+      <nav class="container flex items-center justify-between px-4 mx-auto">
+        <!-- Logo -->
+        <a href="./index.html">
+          <img
+            class="w-20 transition-transform duration-300 hover:scale-110 md:w-28"
+            src="./images/svg/ferrari_logo.svg"
+            alt="Sayt logo"
+          />
+        </a>
 
-        <ul class="ml-[161px] flex gap-10">
+        <!-- Menu -->
+        <ul class="hidden gap-6 md:flex lg:gap-10">
           <li>
             <a
-              class="text-white hover:text-amber-600 font-semibold text-[18px] leading-[100%] tracking-[0%]"
+              class="text-lg font-semibold text-white hover:text-amber-600"
               href="#"
               >Услуги</a
             >
           </li>
           <li>
             <a
-              class="text-white hover:text-amber-600 font-semibold text-[18px] leading-[100%] tracking-[0%]"
+              class="text-lg font-semibold text-white hover:text-amber-600"
               href="#"
               >Преимущества</a
             >
           </li>
           <li>
             <a
-              class="text-white hover:text-amber-600 font-semibold text-[18px] leading-[100%] tracking-[0%]"
+              class="text-lg font-semibold text-white hover:text-amber-600"
               href="#"
               >Наши работы</a
             >
           </li>
           <li>
             <a
-              class="text-white hover:text-amber-600 font-semibold text-[18px] leading-[100%] tracking-[0%]"
+              class="text-lg font-semibold text-white hover:text-amber-600"
               href="#"
               >Контакты</a
             >
           </li>
         </ul>
 
-        <div class="ml-[257px] flex items-center gap-10">
-          <div class="flex border-b border-red-500 pb-2.5">
-            <a
-              class="font-semibold text-[18px] leading-[100%] tracking-[0%] text-white"
-              href="tel:+79999990990"
-              >+7 (999) 999-09-90</a
-            >
-          </div>
-          <div class="flex gap-5">
-            <a href="#">
-              <img
-                class="transition-transform duration-300 hover:scale-110"
+        <!-- Contacts -->
+        <div class="flex items-center gap-4 md:gap-8">
+          <a
+            class="pb-1 text-lg font-semibold text-white border-b border-red-500"
+            href="tel:+79999990990"
+          >
+            +7 (999) 999-09-90
+          </a>
+          <div class="flex gap-3 md:gap-5">
+            <a href="#"
+              ><img
+                class="w-6 transition-transform duration-300 hover:scale-110 md:w-8"
                 src="./images/svg/whatsapp.svg"
                 alt="whatsapp"
-              />
-            </a>
-
-            <a href="#">
-              <img
-                class="transition-transform duration-300 hover:scale-110"
+            /></a>
+            <a href="#"
+              ><img
+                class="w-6 transition-transform duration-300 hover:scale-110 md:w-8"
                 src="./images/svg/telegram.svg"
                 alt="telegram"
-              />
-            </a>
+            /></a>
           </div>
         </div>
       </nav>
 
-      <main class="container mx-auto mt-[117px] relative text-white">
-        <div class="flex-1 space-y-6 text-center lg:text-left">
+      <!-- Hero -->
+      <main class="container relative px-4 mx-auto mt-10 text-white md:mt-20">
+        <div class="space-y-6 text-center lg:text-left">
           <h1
-            class="font-extrabold text-[36px] md:text-[52px] leading-[100%] tracking-[0%] uppercase font-montserrat pb-5"
+            class="pb-5 text-2xl font-extrabold uppercase md:text-4xl lg:text-5xl"
           >
             Превосходство в обслуживании
           </h1>
-          <p
-            class="font-semibold text-[36px] leading-[100%] tracking-[0%] font-montserrat mb-[50px]"
-          >
+          <p class="mb-8 text-xl font-semibold md:text-2xl lg:text-3xl">
             Ваша машина в надежных руках!
           </p>
 
           <a
             href="#form"
-            class="inline-block mb-[95px] bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-[18px] font-semibold py-5 px-[67px] rounded-[10px]"
+            class="inline-block mb-10 bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-lg font-semibold py-3 px-8 md:py-5 md:px-16 rounded-lg"
           >
             Оставить заявку
           </a>
 
-          <ul class="flex flex-col gap-5 space-y-2 text-sm">
+          <!-- Advantages -->
+          <ul class="flex flex-col gap-5 text-sm md:flex-col md:text-base">
             <li
-              class="border border-[#FFB72B] rounded-[10px] flex items-center gap-2.5 w-1/6"
+              class="border border-[#FFB72B] rounded-lg flex items-center gap-2.5 p-3 md:p-4 w-full md:w-1/3 lg:w-1/6"
             >
               <img
-                class="-ml-5"
+                class="w-6 md:w-8"
                 src="./images/svg/italia.svg"
                 alt="italia"
-              />Специально обученные механики
+              />
+              Специально обученные механики
             </li>
             <li
-              class="border border-[#FFB72B] rounded-[10px] flex items-center gap-2.5 w-1/6"
+              class="border border-[#FFB72B] rounded-lg flex items-center gap-2.5 p-3 md:p-4 w-full md:w-1/3 lg:w-1/6"
             >
               <img
-                class="-ml-5"
+                class="w-6 md:w-8"
                 src="./images/svg/crown-icon.svg"
                 alt="crown-icon"
-              />Только премиум качество
+              />
+              Только премиум качество
             </li>
           </ul>
 
-          <h2
-            class="absolute top-32 right-95 z-10 font-extrabold text-[100px] leading-[96%] tracking-[-4.5%] uppercase font-montserrat"
-          >
-            F812 SUPER
-          </h2>
-          <img
-            class="absolute -bottom-40 -right-25 z-20"
-            src="./images/img/header-car.png"
-            alt="Ferrari"
-          />
-          <img
-            class="absolute top-30 -right-50 z-5"
-            src="./images/img/header-bg.png"
-            alt="ferrari logo"
-          />
+          <!-- Hero image -->
+          <div class="absolute right-0 w-full top-20 md:w-full md:relative">
+            <h2
+              class="text-5xl font-extrabold uppercase md:text-7xl lg:text-9xl"
+            >
+              F812 SUPER
+            </h2>
+            <img src="./images/img/header-car.png" alt="Ferrari" />
+          </div>
         </div>
       </main>
     </header>
 
-    <!-- Consultatsion Section  -->
-    <section class="container mx-auto mt-[100px] mb-[100px]">
-      <!-- Section info  -->
+    <!-- Consultation Section -->
+    <section class="container px-4 mx-auto mt-16 mb-16">
       <div
-        class="bg-[url('/images/img/consultatsiya-bg.png')] bg-right bg-no-repeat border border-[#FF0000] shadow-[0px_0px_20px_1px_#00000012] rounded-md p-10"
+        class="bg-[url('/images/img/consultatsiya-bg.png')] bg-right bg-no-repeat border border-[#FF0000] shadow-md rounded-md p-6 md:p-10"
       >
         <h2
-          class="w-[50%] font-medium text-[32px] leading-[140%] tracking-[0%] text-[#FFB72B] pb-10"
+          class="md:w-2/3 font-medium text-xl md:text-2xl lg:text-3xl lg:w-[50%] text-[#FFB72B] pb-6"
         >
           Чтобы узнать точную стоимость работ,
           <span class="text-white">запишитесь на бесплатную консультацию</span>
         </h2>
 
-        <!-- Section Center  -->
-        <div class="mb-5 flex w-[80%] justify-between gap-5">
+        <!-- Form -->
+        <div class="flex flex-col gap-5 mb-5 md:flex-row lg:w-3/4">
           <input
-            class="flex-2 p-5 outline-none border border-[#3333334D] rounded-[10px] bg-white placeholder:text-gray-400  placeholder:text-sm"
+            class="flex-1 p-4 outline-none border border-[#3333334D] rounded-lg bg-white placeholder:text-gray-400 placeholder:text-sm"
             type="text"
             placeholder="Ваше имя"
           />
 
-          <!-- Input Form            -->
           <div
-            class="flex flex-2 items-center gap-2.5 p-5 border border-[#3333334D] rounded-[10px] bg-white"
+            class="flex flex-1 items-center gap-2.5 p-4 border border-[#3333334D] rounded-lg bg-white"
           >
             <img src="./images/svg/russia.svg" alt="russia" />
             <input
-              class="outline-none placeholder:text-gray-400  placeholder:text-sm"
+              class="flex-1 outline-none placeholder:text-gray-400 placeholder:text-sm"
               type="text"
               placeholder="+7 (999) 999-99-99"
             />
           </div>
 
           <button
-            class="flex-1 inline-block bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-[18px] font-semibold py-5 px-[67px] rounded-[10px]"
+            class="flex-1 bg-linear-to-b from-[#FF0000] to-[#C70000] text-white text-lg font-semibold py-4 px-6 rounded-lg"
           >
             ЗАПИСАТЬСЯ
           </button>
         </div>
 
-        <p
-          class="font-medium text-[16px] leading-[140%] tracking-[0%] text-white"
-        >
+        <p class="text-sm font-medium text-white md:text-base">
           Оставляя заявку, вы даете согласие на обработку персональных данных
         </p>
       </div>
+    </section>
+
+    <!-- Our services Section  -->
+    <section
+      class="container px-4 mx-auto mt-16 mb-16 lg:mt-[100px] lg:mb-[100px]"
+    >
+      <h2
+        class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white uppercase pb-2.5 md:pb-5"
+      >
+        Наши услуги
+      </h2>
+      <p
+        class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-xl md:text-2xl lg:text-3xl"
+      >
+        Снизу мы предоставили список наших услуг по разделам:
+      </p>
+
+      <!-- Servies Grid  -->
+      <div
+        class="grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-5 lg:grid-cols-4"
+      >
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec1.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ТЕХ.ОБСЛУЖИВАНИЕ
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/sevec2.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ДИАГНОСТИКА
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec3.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ХОДОВАЯ ЧАСТЬ
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec4.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ТРАНСМИССИЯ
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec5.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ДВИГАТЕЛЬ
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec6.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ВЫХЛОПНАЯ СИСТЕМА
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec7.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              РУЛЕВОЕ УПРАВЛЕНИЕ
+            </p>
+          </div>
+        </div>
+
+        <!-- card  -->
+        <div class="flex flex-col gap-2.5 items-center">
+          <div>
+            <img src="./images/img/servec8.png" alt="servec1" />
+            <p
+              class="pb-10 md:pb-10 lg:pb-[75px] extrabold text-white text-2xl md:text-3xl lg:text-4xl text-center"
+            >
+              ТОПЛИВНА СИСТЕМА
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us section  -->
+    <section
+      class="container px-4 mx-auto mt-16 mb-16 lg:mt-[100px] lg:mb-[100px]"
+    >
+      <h2
+        class="pb-10 text-5xl font-extrabold text-white uppercase md:text-6xl lg:text-7xl md:pb-5"
+      >
+        Почему стоит выбрать нас
+      </h2>
+
+      <!-- Choose Grid  -->
+      <div class="grid grid-cols-1 gap-[25px] md:grid-cols-3 md:gap-5 lg:gap-6">
+        <!-- Cards  -->
+        <div class="flex flex-col gap-5 md:gap-5">
+          <div class="w-[60px] md:w-[75px] lg:w-[100px]">
+            <img src="./images/svg/servec-info1.svg" alt="servec-info1" />
+          </div>
+
+          <div>
+            <h3
+              class="font-semibold text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white pb-5"
+            >
+              Заголовок преимущества
+            </h3>
+
+            <p
+              class="text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards  -->
+        <div class="flex flex-col gap-5 md:gap-5">
+          <div class="w-[60px] md:w-[75px] lg:w-[100px]">
+            <img src="./images/svg/servec-info2.svg" alt="servec-info1" />
+          </div>
+
+          <div>
+            <h3
+              class="font-semibold text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white pb-5"
+            >
+              Заголовок преимущества
+            </h3>
+
+            <p
+              class="text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards  -->
+        <div class="flex flex-col gap-5 md:gap-5">
+          <div class="w-[60px] md:w-[75px] lg:w-[100px]">
+            <img src="./images/svg/servec-info3.svg" alt="servec-info1" />
+          </div>
+
+          <div>
+            <h3
+              class="font-semibold text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white pb-5"
+            >
+              Заголовок преимущества
+            </h3>
+
+            <p
+              class="text-xl md:text-2xl lg:text-4xl leading-[140%] tracking-[0] text-white"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our works Section  -->
+    <section
+      class="container px-4 mx-auto mt-16 mb-16 lg:mt-[100px] lg:mb-[100px]"
+    >
+      <h2
+        class="pb-10 text-5xl font-extrabold text-white uppercase md:text-6xl lg:text-7xl md:pb-10 lg:pb-[75px]"
+      >
+        Наши работы
+      </h2>
+
+      <!-- Our works Grid  -->
+       <div class="grid grid-cols-1 items-center gap-2.5 md:grid-cols-2 md:gap-3.5 lg:grid-cols-3 lg:gap-5">
+        <!-- Cards  -->
+         <div class="flex flex-col gap-2 md:gap-5">
+          <div >
+            <img class="w-full" src="./images/img/work-section-bg.png" alt="work-section-bg">
+          </div>
+         </div>
+       </div>
     </section>
   </body>
 </html>
